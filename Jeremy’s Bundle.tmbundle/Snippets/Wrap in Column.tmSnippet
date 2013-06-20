@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;div class="${1:${2:span}${3:small-}${4:large-}$5 ${6:columns}}"&gt; &lt;!-- // Column span $5 --&gt;
+  $TM_SELECTED_TEXT$0
+&lt;/div&gt; &lt;!-- // END Column span $5 --&gt;</string>
+	<key>keyEquivalent</key>
+	<string>^W</string>
+	<key>name</key>
+	<string>Column (span)</string>
+	<key>scope</key>
+	<string>text.html.erb.rails</string>
+	<key>tabTrigger</key>
+	<string>sp</string>
+	<key>uuid</key>
+	<string>CAB500DB-A98D-4079-9BF3-0E291B2B5752</string>
+</dict>
+</plist>
