@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1|:punch:,:shit:,:beers:|} ${2: Commit Title}${3:
+${4:description}
+}</string>
+	<key>name</key>
+	<string>commit message template</string>
+	<key>tabTrigger</key>
+	<string>msg</string>
+	<key>uuid</key>
+	<string>9C20C452-66D9-4A23-B3E1-95CC5704AFB0</string>
+</dict>
+</plist>
