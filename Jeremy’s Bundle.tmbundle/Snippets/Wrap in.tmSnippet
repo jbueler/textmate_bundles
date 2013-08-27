@@ -4,8 +4,8 @@
 <dict>
 	<key>content</key>
 	<string>&lt;div class="row"&gt; &lt;!-- // ROW --&gt;
-  ${1:$TM_SELECTED_TEXT}$0
-&lt;/div&gt; &lt;!-- // END ROW --&gt;
+  ${1:$TM_SELECTED_TEXT}$2
+&lt;/div&gt; &lt;!-- // END ROW --&gt;$0
 </string>
 	<key>keyEquivalent</key>
 	<string>^W</string>

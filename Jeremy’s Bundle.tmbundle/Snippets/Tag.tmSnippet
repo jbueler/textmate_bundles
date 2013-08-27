@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>&lt;${1:p}&gt;$TM_SELECTED_TEXT&lt;/${1/\s.*//}&gt;</string>
+	<string>&lt;${1:p}&gt;$TM_SELECTED_TEXT$2&lt;/${1/\s.*//}&gt;$0</string>
 	<key>keyEquivalent</key>
 	<string>^W</string>
 	<key>name</key>

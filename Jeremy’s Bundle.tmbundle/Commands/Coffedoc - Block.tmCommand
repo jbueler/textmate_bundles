@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+column_number = ENV['TM_COLUMN_NUMBER']
+whitespace    = " " * (column_number.to_i - 1)
+
+print &lt;&lt;-EOS
+###
+$0
+###
+EOS
+</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>@C</string>
+	<key>name</key>
+	<string>Coffedoc - Block</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>snippet</string>
+	<key>outputLocation</key>
+	<string>atCaret</string>
+	<key>scope</key>
+	<string>source.coffee</string>
+	<key>uuid</key>
+	<string>1E3838F1-020D-478E-B242-AB213AB3C1E6</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

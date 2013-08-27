@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>###
+# $1
+# plugin boilerplate from --&gt; http://kaibun.net/blog/2013/04/19/a-fully-fledged-coffeescript-boilerplate-for-jquery-plugins/
+###
+(($, window, document) -&gt;
+  \$this = undefined
+  _settings = {}
+  
+  # _flag = false
+  methods =
+    init: (options = {}) -&gt;
+      \$this = $(@)
+      \$this.each (index, el) -&gt;
+        \$.extend _settings, (options or {})
+        ${2:console.log "Do Something with el",el}
+      return \$this
+ 
+    # This method is often overlooked.
+    destroy: -&gt;
+      # Do anything to clean it up (nullify references, unbind events…).
+      return $this
+ 
+  _internals =
+    # this toggles our "global" yet internal flag:
+    # toggleFlag: -&gt;
+    #   _flag = !_flag
+  
+  $.fn.$1 = (method) -&gt;
+    if methods[method]
+      methods[method].apply this, Array::slice.call(arguments, 1)
+    else if typeof method is "object" or not method
+      methods.init.apply this, arguments
+    else
+      $.error "Method " + method + " does not exist on jquery.$1"
+) jQuery, window, document</string>
+	<key>name</key>
+	<string>jQuery Plugin</string>
+	<key>scope</key>
+	<string>source.coffee</string>
+	<key>tabTrigger</key>
+	<string>$plugin</string>
+	<key>uuid</key>
+	<string>8611084D-DCBE-4B0D-9B83-BCFDD9E72D9F</string>
+</dict>
+</plist>

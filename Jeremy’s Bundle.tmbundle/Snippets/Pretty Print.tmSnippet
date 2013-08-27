@@ -4,12 +4,12 @@
 <dict>
 	<key>content</key>
 	<string>pp "/* $1 * * * * * * * * * * * * * * * * * * * * * * * *  "
-pp $1
+pp ${2:$1}
 pp "/* END $1 * * * * * * * * * * * * * * * * * * * * * * * *  "</string>
 	<key>name</key>
 	<string>Pretty Print</string>
 	<key>scope</key>
-	<string>source.ruby.rails</string>
+	<string>source.ruby.rails,source.coffee,source.ruby..rake</string>
 	<key>tabTrigger</key>
 	<string>pp</string>
 	<key>uuid</key>
