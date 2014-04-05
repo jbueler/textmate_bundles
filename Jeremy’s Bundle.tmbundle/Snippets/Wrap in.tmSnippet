@@ -12,7 +12,7 @@
 	<key>name</key>
 	<string>Row</string>
 	<key>scope</key>
-	<string>text.html.erb.rails</string>
+	<string>text.html,text.html.erb.rails</string>
 	<key>tabTrigger</key>
 	<string>row</string>
 	<key>uuid</key>

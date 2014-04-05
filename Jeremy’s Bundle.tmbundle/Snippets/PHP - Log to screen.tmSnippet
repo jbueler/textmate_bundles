@@ -3,16 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>pp "/* $1 * * * * * * * * * * * * * * * * * * * * * * * *  "
-pp ${2:$1}
-pp "/* END $1 * * * * * * * * * * * * * * * * * * * * * * * *  "</string>
+	<string>echo "&lt;pre&gt;";var_dump(\$$1); echo "&lt;/pre&gt;";$0</string>
 	<key>name</key>
-	<string>Pretty Print</string>
+	<string>PHP - Log to screen</string>
 	<key>scope</key>
-	<string>source.ruby.rails,source.coffee,source.ruby</string>
+	<string>source.php</string>
 	<key>tabTrigger</key>
 	<string>pp</string>
 	<key>uuid</key>
-	<string>6A751C22-E7E8-4372-B211-8DE7898FA80E</string>
+	<string>1F293221-4DF8-4702-833C-964328496506</string>
 </dict>
 </plist>

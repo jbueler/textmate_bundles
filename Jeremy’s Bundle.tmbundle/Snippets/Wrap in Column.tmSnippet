@@ -11,7 +11,7 @@
 	<key>name</key>
 	<string>Column (span)</string>
 	<key>scope</key>
-	<string>text.html.erb.rails</string>
+	<string>text.html,text.html.erb.rails</string>
 	<key>tabTrigger</key>
 	<string>sp</string>
 	<key>uuid</key>

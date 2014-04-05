@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>#!/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -wKU
+print " $TM_COMMENT_START$0"</string>
+	<key>input</key>
+	<string>line</string>
+	<key>keyEquivalent</key>
+	<string>^~@/</string>
+	<key>name</key>
+	<string>Text Comment</string>
+	<key>outputCaret</key>
+	<string>interpolateByChar</string>
+	<key>outputFormat</key>
+	<string>snippet</string>
+	<key>outputLocation</key>
+	<string>afterInput</string>
+	<key>uuid</key>
+	<string>CE22E127-0A84-4C1E-B766-DAAD90E0FC36</string>
+</dict>
+</plist>

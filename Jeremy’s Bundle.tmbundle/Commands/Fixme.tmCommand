@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -wKU
+require ENV['TM_SUPPORT_PATH'] + '/lib/escape.rb'
+
+10.times do |n|
+  start = ENV["TM_COMMENT_START#{"_#{n}" if n &gt; 0}"].to_s.strip
+  stop  = ENV["TM_COMMENT_END#{"_#{n}"   if n &gt; 0}"].to_s.strip
+  filename = ENV["TM_FILENAME"]
+  author = ENV["TM_FULLNAME"]
+  unless start.empty? || stop.empty? 
+    print "#{e_sn start}\n\t@FIXME - #{author} - #{filename} - $0 \n#{e_sn stop}"
+    exit
+  end
+end
+
+fallback = ENV['TM_COMMENT_START'].to_s.strip
+print "#{e_sn fallback.sub(/.$/, '\\0 ')}@FIXME - #{ENV[TM_FULLNAME]} - #{ENV[TM_FILENAME]} - "
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>name</key>
+	<string>Fixme</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>snippet</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
+	<key>tabTrigger</key>
+	<string>fixme</string>
+	<key>uuid</key>
+	<string>8A5EC22D-86D2-4D10-AE97-A0313E96D37F</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
